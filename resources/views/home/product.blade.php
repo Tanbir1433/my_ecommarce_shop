@@ -7,7 +7,6 @@
                <br><br>
                <div>
                   <form action="{{url('product_search')}}" method="GET">
-
                      @csrf
 
                      <input style="width:450px;" type="text" name="search" placeholder="Search any product">
