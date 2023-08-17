@@ -61,7 +61,7 @@ class HomeController extends Controller
             return view('admin.home',compact('total_product','total_order','total_user','total_revenue','total_deliver','total_process'));
         }
         else{
-            $product=product::paginate(10);
+            $product=product::paginate(6);
             return view('home.userpage',compact('product'));
         }
 
